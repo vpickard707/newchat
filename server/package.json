@@ -5,20 +5,20 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/register": "^7.11.5",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.0",
-    "cloudinary": "^1.23.0",
+    "cloudinary": "^1.25.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.7",
+    "mongoose": "^5.12.1",
     "multer": "^1.4.2",
-    "socket.io": "^2.3.0"
+    "socket.io": "^4.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.7"
   },
   "scripts": {
     "predeploy": "npm run build",
