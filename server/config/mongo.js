@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 dotenv.config();
 
 /**
@@ -8,8 +8,11 @@ dotenv.config();
  * and use connection for all transactions
  * @returns {Promise<void>}
  */
-const mongoConnect = async () =>{
-  await mongoose.connect(process.env.MONGODB_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
-}
+const mongoConnect = async () => {
+  await mongoose.connect(process.env.MONGODB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+};
 
-export default mongoConnect;
+module.exports = mongoConnect;
